@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    width: calc(100% - 10%); /* Can add margins of 10% on left and right side by subtracting 10% from a total of 100% by adding margin: 0 auto below*/
+    width: 90%; /* Can add margins of 10% on left and right side by adding margin: 0 auto below*/
     margin: 0 auto;
     background-color: rgb(37, 34, 34);
 }
@@ -18,8 +18,8 @@ img {
 
 .img-container {
     display: flex;
-    width: 35vw;
-    height: 100vh;
+    width: 35%;
+    min-height: 1000px;
     background-size: cover;
     background-image: url("left-img.jpg");
     background-repeat: no-repeat;
@@ -43,15 +43,16 @@ img {
     flex: 1;
     flex-direction: column;
     background-color: white;
+    width: 100%;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 300px);
+    width: 70%;
     margin-top: 10%;
     margin-left: 5%;
-    font-size: 1.55rem;
+    font-size: 1.57rem;
     text-align: left;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -60,37 +61,36 @@ img {
 .form-container {
     display: flex;
     width: 100%;
-    height: 32%;
     background-color: white;
     margin-top: 0;
     box-shadow: 0 4px 4px rgb(182, 176, 176);
-    clip-path: polygon(0 0, 100% 0, 100% 200%, 0 200%);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .spacing {
-    margin-top: 30px;
+    margin-top: 10%;
 }
 
 .spacing2 {
-    margin-top: 65px;
+    margin-top: 5%;
 }
 
 input, label {
     display: flex;
     margin-top: 1%;
-    font-size: 18px;
+    font-size: 0.9rem;
     border-radius: 4px;
 }
 
 label {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 input {
     border: 2px solid rgb(235, 233, 233);
-    width: 300px;
+    width: 275px;
     padding: 7px;
+    font-size: 1.1rem;
 }
 
 input:focus { 
@@ -102,13 +102,14 @@ input:focus {
 
 form {
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 button {
-    margin-top: 10%;
-    font-size: 20px;
+    margin-top: 5%;
+    font-size: 1.2rem;
     width: 40%;
-    height: 50px;
+    padding: 2.2%;
     border-radius: 8px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
